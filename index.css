@@ -1,0 +1,1301 @@
+
+@font-face {
+    font-family: "ApercuProBold";
+    src: url(Fonts/Apercu\ Pro\ Bold.otf);
+    
+}
+
+@font-face {
+    font-family: "ApercuProMedium";
+    src: url(Fonts/Apercu\ Pro\ Medium.otf);
+}
+
+@font-face {
+    font-family: "ApercuProMono";
+    src: url(Fonts/Apercu\ Pro\ Mono.otf);
+}
+
+@font-face {
+    font-family: "ApercuProRegular";
+    src: url(Fonts/Apercu\ Pro\ Regular.otf);
+}
+
+@font-face {
+    font-family: "EurostileBlackItalic";
+    src: url(Fonts/AnyConv.com__Eurostile-Black\ Italic.otf);
+}
+@font-face {
+    font-family: "TiffanyStdDemi";
+    src: url(Fonts/TiffanyStd-Demi.otf);
+}
+@font-face {
+    font-family: "TiffanyStdDemiIt";
+    src: url(Fonts/TiffanyStd-DemiItalic.otf);
+}
+@font-face {
+    font-family: "TiffanyStdHeavy";
+    src: url(Fonts/TiffanyStd-Heavy.otf);
+}
+@font-face {
+    font-family: "TiffanyStdItalic";
+    src: url(Fonts/TiffanyStd-Italic.otf);
+}
+@font-face {
+    font-family: "TiffanyStdLight";
+    src: url(Fonts/TiffanyStd-Light.otf);
+}
+@font-face {
+    font-family: "TiffanyStd";
+    src: url(Fonts/TiffanyStd.otf);
+}
+
+html, body { 
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+/* header, body {
+    color: white;
+    background-color: black;
+}
+.row {
+    background-color: black;
+}
+html {
+    background-color: black;
+} */
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width:0vw;
+    height:120vh;
+    opacity: 0.8;
+    /* background-image: linear-gradient(to right, rgba(255, 138, 29, 0.959), rgba(104,104,195,1)); */
+    background-image: linear-gradient(to right, rgba(81,118,184,1), rgba(188, 222, 248, 1));
+    z-index: 2;
+    /* display: inline; */
+    transition: width 0.7s;
+}
+#content {
+    display: inline;
+    transition: display 2s;
+}
+#thenav {
+    position: absolute;
+    right:0;
+    width: 0vw;
+    display: flex;
+    /* background-color:#676ac1; */
+    /* background-color: #BCDEF8; */
+   
+    top: 0;
+    padding-top: 10vw;
+    z-index: 3;
+    font-family: "ApercuProMono";
+    height:100%;
+    transition: width 0.7s;
+    overflow: scroll;
+    font-size: 0.9vw;
+}
+#anywhere {
+    position: absolute;
+    padding-top: 10vw;
+    font-size: 0.7vw;
+    text-align: right;
+}
+#nav:hover, #nav2:hover {
+    color:#BCDEF8;
+}
+nav ul {
+    list-style-type: none;
+    width: 90%;
+    line-height: 1.8em;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+} 
+nav li a:hover {
+    text-decoration: none;
+    color: white !important;
+} 
+
+#thenav div {
+    margin-top: -3vw;
+}
+
+#thephonenav {
+    background-color: #BCDEF8;
+    width:0vw;
+    height: auto;
+    padding-bottom: 5vh;
+    overflow:hidden;   
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vw;
+    z-index: 3;
+    font-family: "ApercuProMono";
+    display: inline;
+    font-size: 3vw;
+}
+#anywherePhone {
+   
+    padding-top: 5vw;
+    font-size: 2.5vw;
+}
+#phoneTitle {
+    font-family: "TiffanyStdDemi";
+    font-weight: 800;
+
+    font-size: 3.5vw;
+    /* z-index: 0; */
+    line-height: 0.95;
+
+}
+#thephonecontent {
+    z-index: 3;
+} 
+header {
+    padding-top: 4vw;
+}
+
+.sticky {
+    position: fixed;
+    top:0;
+    padding-top: 4vw;
+}
+
+#title {
+    position: relative;
+    font-family: "TiffanyStdDemi";
+    margin-left: 2ch;
+    margin-top: 3ch;
+    font-size: 1.2em;
+}
+
+#nav {
+    padding: 5px 0;
+    text-align: center;
+    font-family: "ApercuProMono";
+    position: absolute;
+    right: 0;
+    /* margin-right: 10%; */
+    padding-right: 4ch;
+    font-size: 0.8em;
+
+    display: inline-block;
+    border: none;
+    /* padding: 1rem 2rem; */
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* z-index: 1; */
+}
+
+#nav2 {
+    padding: 5px 0;
+    text-align: center;
+    font-family: "ApercuProMono";
+    position: absolute;
+    right: 0;
+    /* margin-right: 10%; */
+    padding-right: 10ch;
+    font-size: 0.8em;
+
+    display: inline-block;
+    border: none;
+    /* padding: 1rem 2rem; */
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* z-index: 1; */
+    font-weight: 500;
+}
+
+#top-message {
+    margin-top: 2ch;
+    text-align: center;
+    font-family: "TiffanyStdDemi";
+    font-weight: 800;
+    /* font-family: span, serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-size: 7vw;
+    /* z-index: 0; */
+    line-height: 0.95;
+
+/* 
+    font-family: mandrel-condensed, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+     */
+    
+
+    /* background-color: black;
+    color: white; */
+}
+#intro {
+    /* z-index: 0; */
+
+}
+
+#art,
+#engineering {
+    /* color: #8b8ac0; */
+    /* color: #676ac1; */
+    /* -webkit-text-stroke: 0.1vw #BCDEF8;
+    color: #ffffff; */
+    color: #BCDEF8;
+    /* color: #5176B8; */
+}
+
+#logo {
+    display: block;
+    z-index: -1;
+}
+#videodiv {
+    /* margin-top: -0.8vw;
+    margin-left: -3vw; */
+    width:100%;
+    overflow:hidden;   
+    margin-top: -3ch;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top 0.5s;   
+
+}
+#videodivStatic {
+    /* margin-top: -0.8vw;
+    margin-left: -3vw; */
+    width: 100%;
+    overflow:hidden;   
+    margin-top: -3ch;
+    display: none;
+    align-items: center;
+    justify-content: center; 
+    
+
+}
+#staticC {
+    max-width: 195px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#videodiv > #theVid {
+    min-width: 100%;
+    min-height: 100%;
+}
+#theVid {
+
+    margin: 0 auto;
+    margin-top: -4vw;
+    /* transform: translate3d(50px, 200px, 0); */
+}
+#secondCont {
+    margin:0 auto;
+    width:72vw
+}
+#carouselExampleInterval {
+    width: 72vw;
+    height: 40vw;
+    margin: 0 auto;
+    margin-top: 2ch;
+    overflow: hidden;
+    
+    
+}
+
+.d-block w-100 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#sec {
+    padding-top: 4vw;
+}
+#create {
+    font-family: "ApercuProMedium";
+    font-size: 6vw;
+    line-height: 0.95;
+    text-align: left;
+    max-width: 68vw;
+}
+#sec2 {
+    padding-top: 0.5vw;
+}
+#smallprint {
+    font-family: "ApercuProRegular";
+    font-size: 4vw;
+    line-height: 0.95;
+    text-align: left;
+    max-width: 65vw;
+}
+
+#thirdCont {
+    margin:0 auto;
+    width:88vw
+}
+
+#WhatTitle {
+    margin-top: 4vw;
+    font-family: "ApercuProMedium";
+    font-size: 6vw;
+}
+
+
+
+#exone {
+    text-align: center;
+    margin-top: 1ch;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgone {
+    width: 60vw;
+    height: 40vw;
+    margin-top: 4ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.imgone img {
+    object-fit: cover;
+    min-height: 100%;
+}
+
+#extwo {
+    text-align: center;
+    margin-top: 1ch;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgonetwo {
+    width: 60vw;
+    height: 40vw;
+    margin-top: 3ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.imgonetwo img {
+    object-fit: cover;
+    min-height: 100%;
+}
+
+#exTitle{
+    font-family: "ApercuProMedium";
+    font-size: 5vw;
+}
+#exExplain {
+    margin-top: -2vw;
+    font-family: "ApercuProRegular";
+    font-size: 3vw;
+}
+
+#featureTwo {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer {
+    font-size: 2vw;
+    position: absolute;
+    right: 0;
+    margin-top: 6vw;
+    margin-right: 5vw;
+    /* padding-right: 2ch; */
+    font-family: "ApercuProMono";
+    text-align: right;
+    padding-bottom: 3vw;
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+}
+a:link {
+    color:inherit;
+    text-decoration: none;
+}
+  
+  /* visited link */
+a:visited {
+    color:inherit;
+}
+  
+  /* mouse over link */
+a:hover {
+    color:#BCDEF8 !important;
+}
+  
+  /* selected link */
+a:active {
+    color:#BCDEF8;
+}
+
+.contacts {
+    margin-top: -1vw;
+    list-style-type: none;
+    letter-spacing: 0.01vw;
+    font-size: 2vw;
+}
+.contacts li {
+    /* text-align: center; */
+    display: inline;
+    text-decoration: none;
+}
+
+.contacts li:a {
+    /* text-align: center; */
+    display: inline;
+    text-decoration: none;
+}
+
+.contacts li:after {
+   content: "|";
+    color: black;
+    margin-left: 0.2vw;
+    margin-right: -0.1vw;
+    text-decoration: none; 
+}
+
+.shift {
+    display: none;
+}
+.shiftTwo {
+    display: none;
+}
+
+#circle {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: greenyellow;
+    display: inline;
+    z-index: 4;
+    /* border:2px solid black; */
+  }
+
+#projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-family: "ApercuProMono";
+    font-size: 3vw;
+}
+#WhatDoTitle {
+    font-size: 3vw;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3vw;
+    font-family: "ApercuProMono";
+}
+#black {
+    color: black;
+}
+#projRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.projectTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "ApercuProMono";
+    overflow: hidden;
+    width: 54vw;
+    height: 36vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    /* font-size: 1.8vw; */
+}
+.projectTileTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "ApercuProMono";
+    overflow: hidden;
+    width: 54vw;
+    height: 36vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    /* font-size: 1.8vw; */
+}
+.projectTile img {
+    /* margin-left: auto;
+    margin-right: auto; */
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+.projectTileTwo img {
+    /* margin-left: auto;
+    margin-right: auto; */
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+.projectTile a {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5vw;
+    color: white;
+    
+}
+.projectTileTwo a {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5vw;
+    color: white;
+    
+    
+}
+.projectTileTwo a:hover, .projectTile a:hover {
+    color: #BCDEF8;
+}
+#theProjects {
+    margin-top: 10vw;
+}
+
+.contMus {
+    margin-top: 10vw;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 40vw;
+    height:60vw;
+}
+.contMus img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+#rowHold {
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#about {
+    font-family: "ApercuProMono";
+    margin-top: 5vw;
+    /* margin-left: 5vw; */
+    width: 80vw;
+    font-size: 2vw;
+
+}
+.TheSmallShift {
+    display: none;
+   
+}
+.TheSmallShiftTwo {
+    display: none;
+}
+
+
+.mainShow {
+    display:flex;
+        align-items: center;
+        justify-content:center;
+        text-align: left;
+}
+
+.projVideo {
+    margin-top: 5ch;
+    /* width: 70vw;
+    height: 50vw; */
+}
+
+#desc {
+    font-family: "ApercuProMono";
+    width: 66.7vw;
+    display: block;
+    align-items: center;
+    justify-content:center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2ch;
+    font-size: 2vw;
+}
+
+#desc p {
+    width: 50vw;
+}
+#desc h2 {
+    font-size: 3vw;
+}
+#descInner {
+    padding-top: 2ch;
+   padding-left: 0;
+}
+
+#span {
+    width: 100vw;
+    background-color: black;
+    height: 1vw;
+}
+.projectTitle {
+    font-family: "ApercuProMedium";
+    font-size: 3vw;
+    line-height: 2ch;
+}
+.projDes {
+    line-height: 2ch;
+}
+#bold {
+    font-weight: 600;
+}
+.desDev {
+    margin-top: 5ch;
+    
+    
+}
+.desDevTwo {
+    padding-top: 2vw;
+    
+    text-align: right;
+    
+    
+}
+#desDevCon {
+    margin-top: 5ch;
+    padding-bottom: 3ch;
+    
+}
+
+#desDevCon p {
+    max-width: 100%;
+    padding-top: 3vw;
+}
+.projPhoto {
+    margin-top: 5ch;
+    width: 66.7vw;
+}
+#Behance {
+    background-image: linear-gradient(to right, rgba(81,118,184,1), rgba(188, 222, 248, 1));
+}
+@media (min-width: 576px) {
+   
+    #desDevCon p {
+      
+        padding-top: 0px;
+    }
+
+    .contacts {
+        font-size: 1vw;
+    }
+    #desc h2 {
+        font-size: 2vw;
+    }
+    
+    #desc {
+        font-family: "ApercuProMono";
+        width: 66.7vw;
+        display: block;
+        align-items: center;
+        justify-content:center;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2ch;
+        font-size: 1.6vw;
+    }
+   
+    #rowHold {
+        margin-top: 0vw;
+        display:flex;
+        align-items: center;
+        justify-content:unset;
+        text-align: left;
+    }
+    .contMus {
+        margin-top: 5vw;
+        margin-left: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25vw;
+        height:35vw;
+    }
+    .contMus img {
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+    }
+    #about {
+        font-family: "ApercuProMono";
+        margin-top: 5vw;
+        /* margin-left: 5vw; */
+        width: 50vw;
+        font-size: 1vw;
+    
+    }
+    footer {
+        font-size: 1vw;
+        position: absolute;
+        right: 0;
+        margin-top: 6vw;
+        margin-right: 5vw;
+        /* padding-right: 2ch; */
+        font-family: "ApercuProMono";
+        text-align: right;
+        padding-bottom: 3vw;
+        text-decoration: none;
+        color: black;
+        padding: 0;
+        padding-bottom: 3vw;
+    }
+    #exExplain {
+        margin-top: 0vw;
+        font-family: "ApercuProRegular";
+        font-size: 3vw;
+    }
+    
+    #exTitle{
+        font-family: "ApercuProMedium";
+        font-size: 4vw;
+    }
+    #exExplain {
+        font-family: "ApercuProRegular";
+        font-size: 2vw;
+    }
+    #title {
+        margin-left: 3ch;
+        margin-top: 2ch;
+        font-size: 1.2em;
+    }
+    
+    header {
+        padding-top: 3vw;
+    }
+
+    #nav, #nav2 {
+        margin-top: -0.3ch;
+        font-size: 0.9em;
+    }
+
+    #top-message {
+        margin-left: 1.5ch;
+        margin-top: 1.3ch;
+        text-align: left;
+        font-size: 4vw;
+     
+    }
+    #div {
+        /* margin-top: -0.8vw;
+        margin-left: -3vw; */
+        width:100%;
+        overflow:hidden;   
+        margin-top: -3ch;
+    }
+    
+    #create {
+        font-family: "ApercuProMedium";
+        font-size: 3.5vw;
+        line-height: 0.95;
+        text-align: left;
+        max-width: 60vw;
+    }
+
+    #sec2 {
+        /* z-index: 1; */
+        margin-top: -2vw;
+    }
+    #smallprint {
+        font-family: "ApercuProRegular";
+        font-size: 2vw;
+        line-height: 0.95;
+        text-align: left;
+        max-width: 50vw;
+    }
+
+    #carouselExampleInterval {
+        margin-top: 0ch;  
+    }
+
+    #WhatTitle {
+        margin-top: 4vw;
+        font-family: "ApercuProMedium";
+        font-size: 3.5vw;
+    }
+    .projectTile a {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2vw;
+    }
+    .projectTileTwo a {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2vw;
+    }
+   
+
+}
+
+@media (min-width: 768px) {
+    #desc {
+       
+        font-size: 1.3vw;
+    }
+  
+
+#projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-family: "ApercuProMono";
+    font-size: 1.2vw;
+}
+
+    #carouselExampleInterval {
+        margin-top: 0ch;  
+    }
+    #projects {
+        margin-top: -2vw;
+    }
+    #underline {
+        width: 28vw;
+        background-color: #ffd451;
+        height: 5px;
+        margin-right: 10vw;
+    }
+    #explainOne {
+        display: flex;
+
+    }
+    #exone {
+        text-align: left;
+        margin-left: 10vw;
+        /* margin-top: 20vw;
+        width: 28vw;
+        margin-right: 10vw; */
+        width: 30vw;
+        
+    }
+    .imgone {
+        width: 45vw;
+        height: 30vw;
+        margin-top: 3vw;
+        margin-left: 10vw;
+        overflow: hidden;
+        transition: margin-left 1s;
+    }
+    #firstImg {
+        transition: margin-left 1s;
+    }
+    #thirdImg {
+        transition: margin-left 1s;
+    }
+    .shift {
+        /* position: absolute; */
+        height: 30vw;
+        background-color: black;
+        color: white;
+        margin-left: 10vw;
+        margin-top: -30vw;
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* z-index: -1; */
+    }
+    .smallShift {
+        position:absolute;
+        height: 24vw;
+        background-color: black;
+        color: white;
+        /* margin-left: -33vw; */
+        
+        width: 3vw;
+        /* writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; */
+      
+    }
+    .smallShiftTest {
+        height: 24vw;
+        background-color: black;
+        color: white;
+        margin-left: 10vw;
+        
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .smallShiftTwo {
+        position: absolute;
+        height: 24vw;
+        background-color: black;
+        color: white;
+        /* z-index: 2; */
+        /* margin-top: -24vw; */
+        margin-left: 33vw;
+        
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* z-index: 0; */
+        /* display:block; */
+    }
+    .smallShift a {
+        display: inline;
+        font-size: 1vw;
+        font-family: "ApercuProMono";
+        z-index: 1;
+    }
+
+    .smallShiftTwo a {
+        display: inline;
+        font-size: 1vw;
+        font-family: "ApercuProMono";
+        z-index: 1;
+    }
+    .shift a {
+        display: inline;
+        font-size: 1vw;
+        font-family: "ApercuProMono";
+        /* width: 100%; */
+        /* margin-left: -50%; */
+        /* margin-right: auto; */
+    }
+    /* .shift a:hover {
+        color:#BCDEF8;
+    } */
+    #secImg {
+        transition: margin-right 1s;
+    }
+    #fourthImg {
+        transition: margin-right 1s;
+    }
+    .shiftTwo {
+        /* position: absolute; */
+        height: 30vw;
+        background-color: black;
+        color: white;
+        /* margin-right: 55vw; */
+        margin-left: 45.3vw;
+        margin-top: -30vw;
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* z-index: -1; */
+    }
+    .shiftTwo a {
+        display: inline;
+        font-size: 1vw;
+        font-family: "ApercuProMono";
+        /* width: 100%; */
+        /* margin-left: -50%; */
+        /* margin-right: auto; */
+    }
+    
+    .imgone img {
+        object-fit: cover;
+        min-height: 100%;
+    }
+    
+    #extwo {
+        text-align: right;
+        margin-right: 10vw;
+        width: 30vw;
+    }
+    .imgonetwo {
+        width: 45vw;
+        height: 30vw;
+        margin-top: 3vw;
+        margin-right: 10vw;
+        overflow: hidden;
+    }
+    .imgonetwo img {
+        object-fit: cover;
+        min-height: 100%;
+    }
+    
+    #exTitle{
+        font-family: "ApercuProMedium";
+        font-size: 2.3vw;
+    }
+    #exExplain {
+        font-family: "ApercuProRegular";
+        font-size: 1.1vw;
+        /* color: lightgrey; */
+        margin-top: -1.5vw;
+        color: #36454f;
+    }
+    
+    #featureTwo {
+        display: flex;
+        flex-direction: row;
+    }
+    #projRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 5vw;
+        padding-top: 0vw;
+    }
+    .projectTile {
+        position: absolute;
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; */
+        /* font-family: "ApercuProMono"; */
+        overflow: hidden;
+        width: 36vw;
+        height: 24vw;
+        margin-left: 0;
+        margin-right: 0;
+        /* color: white; */
+        /* z-index: 1; */
+        transition: margin-left 1s;
+        /* transition: margin-right 1s; */
+    }
+    .TheSmallShift {
+        /* z-index: 1; */
+        font-family: "ApercuProMono";
+        height: 24vw;
+        background-color: black;
+        background-color: #00855B;
+        color: white;
+        margin-left: -33vw;
+        font-size: 1vw;
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .TheSmallShift a {
+        z-index: 1;
+    }
+    .TheSmallShiftTwo {
+        /* z-index: 1; */
+        font-family: "ApercuProMono";
+        height: 24vw;
+        background-color: black;
+        background-color: #ffd451;
+        background-color: #00855B;
+        color: white;
+        margin-right: -33vw;
+        font-size: 1vw;
+        width: 3vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .TheSmallShiftTwo a {
+        z-index: 1;
+    }
+    .projectTileTwo {
+        position: absolute;
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "ApercuProMono"; */
+        overflow: hidden;
+        width: 36vw;
+        height: 24vw;
+        margin-left: 0;
+        margin-right: 0;
+        color: white;
+        /* z-index: 1; */
+        transition: margin-left 1s;
+        /* transition: margin-right 1s; */
+    }
+    
+    .projectTile img {
+        /* margin-left: auto;
+        margin-right: auto; */
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .projectTileTwo img {
+        /* margin-left: auto;
+        margin-right: auto; */
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .projectTile a {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3vw;
+        display: none;
+    }
+    .projectTileTwo a {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3vw;
+        display: none;
+    }
+    
+    #theProjects {
+        margin-top: 10vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #desc {
+       
+        font-size: 0.9vw;
+    }
+  
+    #WhatDoTitle {
+        font-size: 1.2vw;
+    }
+
+    #carouselExampleInterval {
+        margin-top: 0ch;  
+    }
+    #title {
+        margin-left: 3ch;
+        margin-top: 2ch;
+        font-size: 1.5em;
+    }
+    
+    header {
+        padding-top: 3vw;
+    }
+
+    #nav, #nav2 {
+        margin-top: 0ch;
+        font-size: 1em;
+    }
+
+    #create {
+        font-family: "ApercuProMedium";
+        font-size: 3vw;
+        line-height: 0.95;
+        text-align: left;
+        max-width: 60vw;
+    }
+
+    #sec2 {
+        /* z-index: 1; */
+        margin-top: 0vw;
+    }
+    
+    #smallprint {
+        font-family: "ApercuProRegular";
+        font-size: 1.5vw;
+        line-height: 0.95;
+        text-align: left;
+        max-width: 50vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #carouselExampleInterval {
+        margin-top: 0ch;  
+    }
+}
+
+@media (min-width: 1400px) {
+    #carouselExampleInterval {
+        margin-top: 0ch;  
+    }
+    #videodiv {
+        /* margin-top: -0.8vw;
+        margin-left: -3vw; */
+        width:100%;
+        overflow:hidden;   
+        margin-top: -5ch;
+    }
+}
+
+
+
+
+

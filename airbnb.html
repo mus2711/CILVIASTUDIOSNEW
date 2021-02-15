@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <script type="module" src="./proj.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <link href="//vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/7.8.2/video.min.js"></script>
+   
+    <title>CILVIA STUDIOS</title>
+  </head>
+  <header>
+        <div class="row g-0" id="myHeader">
+            <div class="col-10">
+                <a id="title" href="./index.html">Cilvia Studios</a>
+            </div>
+            <div class="col-2">
+                <button id="nav2"><a href="./about.html">About</a></button>
+                <button src ="" id="nav">Menu</button>
+            </div>   
+        </div>
+  </header>
+ 
+  <body>
+    <nav id="thenav">
+        <div id="content">
+        
+            <ul>
+                <li><a href="./index.html">Home</a><li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a><li>
+                <li><a href="#theProjects">Projects</a></li>
+                <li><a href="#ProSer">Products & Services</a></li>
+                <li><a href="#TechImp">Technological Implementation</a></li>
+                <li><a href="#EngAna">Engineering Analysis</a></li>
+                <li><a href="#DesInno">Brand Development</a></li>
+            </ul>
+            <ul>
+                <li><a href="./airbnb.html">Airbnb Machine Learning</a></li>
+                <li><a href="./aygo.html">Aygo Baby Buggy</a></li>
+                <li><a href="./afc.html">A Furniture Collection</a></li>
+                <li><a href="./carproject.html">Car Project</a></li>
+                <li><a href="./soapbros.html">Soap Bros</a></li>
+    
+            </ul>
+            <ul>
+                <li><a id="anywhere">CLICK ANYWEHRE TO THE LEFT TO CLOSE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="thephonenav">
+        <div id="phonecontent">
+            <ul>
+                <li><a href="./index.html" id="phoneTitle">CILVIA STUDIOS</a><li>
+            </ul>
+            <ul>
+                <li><a href="./index.html">Home</a><li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="#theProjects">Projects</a></li>
+                <li><a href="#ProSer">Products & Services</a></li>
+                <li><a href="#TechImp">Technological Implementation</a></li>
+                <li><a href="#EngAna">Engineering Analysis</a></li>
+                <li><a href="#DesInno">Brand Development</a></li>
+            </ul>
+            <ul>
+                <li><a href="./airbnb.html">Airbnb Machine Learning</a></li>
+                <li><a href="./aygo.html">Aygo Baby Buggy</a></li>
+                <li><a href="./afc.html">A Furniture Collection</a></li>
+                <li><a href="./carproject.html">Car Project</a></li>
+                <li><a href="./soapbros.html">Soap Bros</a></li>
+    
+            </ul>
+            <ul>
+                <li><a id="anywherePhone">CLICK ANYWEHRE BELOW TO CLOSE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main">
+        <!-- <div id="circle"></div> -->
+        <div id="overlay"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mainShow">
+                    <!-- <div class="projVideo">
+                       <video controls>
+                           <source src="./Media/IMG_3970.MOV.mp4" type="video/mp4">
+                       </video>
+                    </div> -->
+                    <div class="projPhoto">
+                        <img src="./Images/project-tile/carbon.png"">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row g-0"id="desc">
+            <div class="col-12" id="descInner">
+                <div>
+                    <p class="projectTitle">AIRBNB MACHINE LEARNING</p>
+                </div>
+                <div>
+                    <p class="projDes">More than 40 million people visit Seattle each year with more visitors turning to home rental services for a more authentic experience at a better price and increased convenience. In order to set their listings at a competitive price, hosts in Seattle need an estimation for the price of their listing.
+                        Airbnb, a major player in the industry, has commissioned our consultancy to devise a model that can determine if a property should be priced above or below the median listings price based on its features.
+                        </p>
+                </div>
+                <div>
+                    <p><span id="bold">By:</span> Mustafa Al Quraishi, Michaela Barker, Carine Fattal, Tae Kim.</p>
+                    <p><span id="bold">Problem:</span> Assimilate data, develop, train and test a machine model that can determine if a property should be priced above or below the median listings price based on its features.</p>
+                    <p><span id="bold">Solution:</span> Our best model was decided to be the decision tree model, as it would only wrongly predict 24 listings in predicting that they should have been priced above the median listing price of $100 compared; to the RFC and SVC models' incorrect predictions for 31 and 34 listings respectively. Our final chosen model had precison, recall and accuracy values of 0.86, 0.72, 0.79 respectively.
+
+
+                    </p>
+                </div>
+                
+                <div class="desDev">
+                    <h2>Code Development</h2>
+                </div>
+                <div class="row" id="desDevCon">
+                    
+                        <div class="col-sm-8">
+                            <img src="./Images/project-tile/carbon2.png">
+                        </div>
+                        <div class="col-sm-4">
+                            <p>We trained several machine learning models including Logarithmic Regression, Support Vector Machine, Random Forest Classifier and Tree models.</p>
+                            <p>In order to carry out the predictive testing, we split our dataset 80% for training data, 10% for validation data and 10% for the testing data. It was deemed the dataset was large enough (over 3000 incidences and 73 attributes) for 10% testing data to be sufficient for the means.
+                            </p>
+                            <p>The paramaters for each model were tuned as several tests were run to select the optimal model parameters, as we plotted the results of each model under different paramters to select the most optimal solution.</p>
+                        </div>
+                
+                </div>
+                <div class="row" id="desDevCon">
+                    <div class="desDev">
+                        <h2>Solution</h2>
+                    </div>
+                    <div class="row" id="desDevCon">
+                        
+                            <div class="col-sm-3">
+                                <img src="./Images/project-tile/carbon3.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <p>As our model is aiming to predict whether a room should be priced above or below the median price, we decided it was more harmful for a host to be incorrectly told to price above the median as this would decrease its market favourability against competing listings, making it uncompetitive and unattractive to renters. For this reason, we wanted a model which had the lowest number of false positives (false indications a property should be listed above the median price), which coincides with a good precision. Our best model was therefore decided to be the decision tree model as it would only wrongly predict 24 listings to be priced above the median listing price of $100 compared to the RFC and SVC models incorrect predictions for 31 and 34 listings respectively.
+                                </p>
+                            </div>
+                    
+                    </div>
+                   
+                
+               
+                    <button id="Behance"><a href="https://github.com/mus2711/AirbnbMachines">Check out the code on Github</a></button>
+            </div>
+               
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+
+
+    
+    <footer>
+        <div id="cvmus">
+            <p>CILVIA STUDIOS IS HEADED BY CREATOR MUSTAFA AL QURAISHI, A DESIGN ENGINEER FROM IMPERIAL COLLEGE LONDON.</p>
+        </div>
+        <div class="footerlist">
+            <ul class="contacts">
+                <li><a title="footer-cilviastudios" href="index.html">&copy; CILVIA STUDIOS</a></li>
+                <li><a title="footer-cilviastudios" href="https://www.instagram.com/cilviastudios/">INSTAGRAM</a></li>
+                <li><a title="footer-cilviastudios" href="https://www.behance.net/cilviastudios">BEHANCE</a></li>
+                <li tabindex="0"><a href="https://www.google.co.uk/maps/place/Dyson+School+of+Design+Engineering,
+                    +Imperial+College+London/@51.4979899,-0.1767011,17z/data=!3m1!4b1!4m5!3m4!1s0x48760
+                    5436a532dc5:0x350eb7ddd52ecb04!8m2!3d51.4979899!4d-0.1745124">
+                    25 EXHIBTION ROAD, SOUTH KENSINGTON, LONDON, SW7 2DB</a></li>
+                <li tabindex="0"><a href="mailto:ma819@ic.ac.uk" tabindex="0">MA819@IC.AC.UK</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    </body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
