@@ -12,6 +12,7 @@ carousel.init = function () {
     console.log(w);
     if (w > 576) {
         logo.style.display = "inline";
+        staticEl.style.display = "none";
         // video.style.display = "flex";
         video.height = 486 * (w / 1440);
         video.width = 486 * (w / 1440);
