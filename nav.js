@@ -1,7 +1,7 @@
 const nav = Object.create(null);
 
 nav.init = function () {
-    var width = window.screen.width;
+    var width = window.innerWidth;
     // console.log(width);
     const el = function (id) {
         return document.getElementById(id);
