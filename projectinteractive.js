@@ -81,7 +81,8 @@ int.init = function () {
         console.log("yea");
     }
 
-    var width = window.screen.width;
+    var width = window.innerWidth;
+    console.log(width);
     if (width > 768) {
 
         
@@ -232,6 +233,7 @@ int.init = function () {
             // el("rh").addEventListener("mouseleave", function () { kmove("rh");});
             // el("rh1").addEventListener("mouseleave", function () { kmove("rh");});
         }
+       
 
     }
 

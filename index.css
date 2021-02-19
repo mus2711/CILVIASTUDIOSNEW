@@ -55,8 +55,11 @@ html, body {
     overflow-x: hidden;
     overflow-y: scroll;
     
+    
 }
-/* header, body {
+
+/* 
+header, body {
     color: white;
     background-color: black;
 }
@@ -66,6 +69,7 @@ html, body {
 html {
     background-color: black;
 } */
+
 
 #overlay {
     position: absolute;
@@ -203,6 +207,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     /* z-index: 1; */
+   
 }
 
 #nav2 {
@@ -1295,8 +1300,6 @@ a:active {
         margin-top: -5ch;
     }
 }
-
-
 
 
 

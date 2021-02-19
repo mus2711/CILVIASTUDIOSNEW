@@ -45,7 +45,7 @@ shift.init = function () {
 
         fourthShift.style.marginRight = "10vw";
     }
-    var width = window.screen.width;
+    var width = window.innerWidth;
     if (width > 768) {
         firstShift.addEventListener("mouseover", shiftItRight);
         un1.addEventListener("mouseover", shiftItRight);
