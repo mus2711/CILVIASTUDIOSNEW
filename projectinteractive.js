@@ -108,8 +108,8 @@ int.init = function () {
         el("webTwo").addEventListener("mouseenter", function () { opacity("webTwo");});
         el("webTwo1").addEventListener("mouseenter", function () { opacity("webTwo");});
 
-        // el("cr").addEventListener("mouseenter", function () { opacity("cr");});
-        // el("cr1").addEventListener("mouseenter", function () { opacity("cr");});
+        el("cr").addEventListener("mouseenter", function () { opacity("cr");});
+        el("cr1").addEventListener("mouseenter", function () { opacity("cr");});
 
         el("ab").addEventListener("mouseenter", function () { opacity("ab");});
         el("ab1").addEventListener("mouseenter", function () { opacity("ab");});
