@@ -142,8 +142,8 @@ int.init = function () {
         el("sb").addEventListener("mouseleave", function () { kopacity("sb");});
         el("sb1").addEventListener("mouseleave", function () { kopacity("sb");});
 
-        // el("cr").addEventListener("mouseleave", function () { kopacity("cr");});
-        // el("cr1").addEventListener("mouseleave", function () { kopacity("cr");});
+        el("cr").addEventListener("mouseleave", function () { kopacity("cr");});
+        el("cr1").addEventListener("mouseleave", function () { kopacity("cr");});
 
         el("webTwo").addEventListener("mouseleave", function () { kopacity("webTwo");});
         el("webTwo1").addEventListener("mouseleave", function () { kopacity("webTwo");});
@@ -182,8 +182,8 @@ int.init = function () {
             el("webTwo").addEventListener("mouseenter", function () { opacity2("webTwo");});
             el("webTwo1").addEventListener("mouseenter", function () { opacity2("webTwo");});
     
-            // el("cr").addEventListener("mouseenter", function () { opacity2("cr");});
-            // el("cr1").addEventListener("mouseenter", function () { opacity2("cr");});
+            el("cr").addEventListener("mouseenter", function () { opacity2("cr");});
+            el("cr1").addEventListener("mouseenter", function () { opacity2("cr");});
     
 
             el("ab").addEventListener("mouseenter", function () { opacity2("ab");});
@@ -221,8 +221,8 @@ int.init = function () {
             el("webTwo").addEventListener("mouseleave", function () { kopacity2("webTwo");});
             el("webTwo1").addEventListener("mouseleave", function () { kopacity2("webTwo");});
 
-            // el("cr").addEventListener("mouseleave", function () { kopacity2("cr");});
-            // el("cr1").addEventListener("mouseleave", function () { kopacity2("cr");});
+            el("cr").addEventListener("mouseleave", function () { kopacity2("cr");});
+            el("cr1").addEventListener("mouseleave", function () { kopacity2("cr");});
     
             el("ab").addEventListener("mouseleave", function () { kopacity2("ab");});
             el("ab1").addEventListener("mouseleave", function () { kopacity2("ab");});
